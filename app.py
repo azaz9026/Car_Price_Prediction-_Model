@@ -71,11 +71,11 @@ if st.button("Predict"):
     '''
 
 import pandas as pd
-import pickle as pk
+import pickle
 import streamlit as st
 
 # Load the model
-model = pk.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 # Set up the Streamlit app
 st.set_page_config(page_title='Car Price Prediction', layout='wide')
