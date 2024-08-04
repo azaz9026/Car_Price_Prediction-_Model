@@ -73,7 +73,6 @@ if st.button("Predict"):
 import pandas as pd
 import pickle as pk
 import streamlit as st
-import sklearn
 
 # Load the model
 model = pk.load(open('model.pkl', 'rb'))
